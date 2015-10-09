@@ -1,4 +1,4 @@
-(function(Velocity, $){
+(function($){
 	
 	var smoothScroll = {
 
@@ -28,4 +28,4 @@
 
 	smoothScroll.init();
 
-}(Velocity, jQuery));
+}(jQuery));
