@@ -18,6 +18,10 @@
             var target = e.target,
                 $anchor = $(target).closest('[data-smooth-scroll-href]'),
                 targetSelector = $anchor.data('smooth-scroll-href');
+                
+            if(history && history.pushState){
+				history.pushState(null, null, targetSelector);
+			}
             
             $(targetSelector).velocity('scroll', { duration: 500 });
         }
